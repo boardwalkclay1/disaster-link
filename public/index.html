@@ -2,78 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SafeLink — Emergency Safety Network</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <title>SafeLink – Emergency Coordination Network</title>
+
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">SafeLink</div>
+<header class="header">
+  <h1>SafeLink</h1>
+  <p>Your community connection during emergencies.</p>
+</header>
 
-    <nav class="nav">
-      <select id="menuDropdown" class="dropdown">
-        <option value="">Menu</option>
-        <option value="about">About</option>
-        <option value="features">Features</option>
-        <option value="safety">Safety Modes</option>
-        <option value="phonebook">Phonebook</option>
-        <option value="signup">Create Account</option>
-        <option value="login">Login</option>
-      </select>
-    </nav>
-  </header>
+<section class="intro">
+  <h2>What is SafeLink?</h2>
+  <p>
+    SafeLink is a simple emergency‑coordination platform designed to help people 
+    communicate, request help, organize supplies, and stay informed during natural 
+    disasters or community emergencies.
+  </p>
+</section>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Your Safety. Your Network.</h1>
-    <p>Instant alerts, background recording, movement detection, and a nationwide directory of people ready to help.</p>
+<section class="features">
+  <h2>How SafeLink Helps You</h2>
 
-    <div class="button-row">
-      <button class="bubble-btn" onclick="goSignup()">Create Account</button>
-      <button class="bubble-btn" onclick="goLogin()">Login</button>
-      <button class="bubble-btn" onclick="scrollToInfo()">Learn More</button>
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <h3>Mark Yourself Safe</h3>
+      <p>
+        Quickly mark your location and status so friends, family, and community 
+        leaders know you’re okay — or if you need help.
+      </p>
     </div>
-  </section>
 
-  <!-- INFO SECTION -->
-  <section id="info" class="info-section">
-    <h2>What SafeLink Provides</h2>
+    <div class="feature-card">
+      <h3>Request Help</h3>
+      <p>
+        If you lose power, run out of food or water, or need medical supplies, 
+        SafeLink lets you describe your situation and get assistance fast.
+      </p>
+    </div>
 
-    <div class="info-card">
+    <div class="feature-card">
+      <h3>Find Supply Locations</h3>
+      <p>
+        See nearby distribution points for food, water, medicine, blankets, 
+        and emergency supplies.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Donate to People in Need</h3>
+      <p>
+        Support individuals or families directly, or contribute to large 
+        community campaigns during major disasters.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Community Leaders</h3>
+      <p>
+        Verified leaders can broadcast updates, organize supply drops, and 
+        coordinate volunteers.
+      </p>
+    </div>
+
+    <div class="feature-card">
       <h3>Emergency Alerts</h3>
-      <p>Send instant alerts to contacts and nearby users with your location and situation.</p>
+      <p>
+        Receive real‑time updates about danger zones, evacuation routes, 
+        shelter openings, and supply deliveries.
+      </p>
     </div>
 
-    <div class="info-card">
-      <h3>Auto Tracking & Recording</h3>
-      <p>Record video/audio in the background, even with the screen dark.</p>
-    </div>
+  </div>
+</section>
 
-    <div class="info-card">
-      <h3>Movement Detection</h3>
-      <p>Detect dangerous movement patterns and auto-send alerts.</p>
-    </div>
+<section class="cta">
+  <h2>Get Started</h2>
+  <p>Create an account or log in to access your dashboard.</p>
 
-    <div class="info-card">
-      <h3>Nationwide Phonebook</h3>
-      <p>Find skilled people nearby. Upload your profile for $1.</p>
-    </div>
-  </section>
+  <div class="cta-buttons">
+    <a href="/pages/dashboard.html" class="btn">Login</a>
+    <a href="/pages/dashboard.html" class="btn">Sign Up</a>
+  </div>
+</section>
 
-  <script>
-    function goSignup() {
-      window.location.href = "signup.html";
-    }
-    function goLogin() {
-      window.location.href = "login.html";
-    }
-    function scrollToInfo() {
-      document.getElementById("info").scrollIntoView({ behavior: "smooth" });
-    }
-  </script>
+<footer class="footer">
+  <p>SafeLink © 2026 — Built for community resilience.</p>
+</footer>
 
 </body>
 </html>
