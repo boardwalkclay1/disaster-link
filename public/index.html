@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>DisasterLink – Community Support During Crisis</title>
-
+  <link rel="icon" type="image/jpeg" href="/img/logo/d-link-logo.jpg">
+  <meta property="og:image" content="/img/logo/d-link-logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/index.css">
+  <script type="module" src="/js/info.js" defer></script>
 </head>
 
 <body>
@@ -12,6 +15,7 @@
 <div class="bg-overlay"></div>
 
 <header class="header">
+  <img src="/img/logo/d-link-logo.jpg" alt="DisasterLink Logo" class="logo">
   <h1>DisasterLink</h1>
   <p>Connecting people, resources, and support when disaster strikes.</p>
 </header>
@@ -37,50 +41,44 @@
 
     <div class="feature-card">
       <h3>Mark Yourself Safe</h3>
-      <p>
-        Let your community know your status instantly. Share your location, condition, and household needs.
-      </p>
-      <a href="/pages/safety.html" class="feature-link">Learn More</a>
+      <p>Let your community know your status instantly.</p>
+      <button class="dropdown-btn" data-info="safe">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
     <div class="feature-card">
       <h3>Request Help</h3>
-      <p>
-        Running low on food, water, medicine, or power? Submit a request and get matched with nearby helpers.
-      </p>
-      <a href="/pages/requests.html" class="feature-link">Request Assistance</a>
+      <p>Submit a request and get matched with nearby helpers.</p>
+      <button class="dropdown-btn" data-info="help">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
     <div class="feature-card">
       <h3>Find Supply Locations</h3>
-      <p>
-        See active distribution points for food, water, medical aid, blankets, and emergency supplies.
-      </p>
-      <a href="/pages/map.html" class="feature-link">View Map</a>
+      <p>See active distribution points for food, water, and aid.</p>
+      <button class="dropdown-btn" data-info="map">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
     <div class="feature-card">
       <h3>Donate to Families</h3>
-      <p>
-        Support individuals or households directly. Every donation helps someone survive and recover.
-      </p>
-      <a href="/pages/donate.html" class="feature-link">Donate Now</a>
+      <p>Support individuals or households directly.</p>
+      <button class="dropdown-btn" data-info="donate">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
     <div class="feature-card">
       <h3>Community Campaigns</h3>
-      <p>
-        Join large-scale relief efforts for cities hit hardest. Help fund supplies, transportation, and recovery.
-      </p>
-      <a href="/pages/campaigns.html" class="feature-link">Explore Campaigns</a>
+      <p>Join large-scale relief efforts for cities hit hardest.</p>
+      <button class="dropdown-btn" data-info="campaigns">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
     <div class="feature-card">
       <h3>Leader Updates</h3>
-      <p>
-        Verified community leaders can broadcast evacuation routes, danger zones, supply drops, and safety alerts.
-      </p>
-      <a href="/pages/updates.html" class="feature-link">Leader Dashboard</a>
+      <p>Broadcast evacuation routes and safety alerts.</p>
+      <button class="dropdown-btn" data-info="updates">More Info</button>
+      <a href="/pages/signup.html" class="feature-link">Join Now</a>
     </div>
 
   </div>
@@ -89,7 +87,7 @@
 <section class="mission">
   <h2>Our Mission</h2>
   <p>
-    DisasterLink exists to empower communities with real-time communication, support, and coordination.
+    DisasterLink empowers communities with real-time communication, support, and coordination.
     When disaster hits, people need clarity, connection, and resources — not chaos.
   </p>
   <p>
@@ -108,6 +106,7 @@
 </section>
 
 <footer class="footer">
+  <img src="/img/logo/d-link-logo.jpg" alt="DisasterLink Logo" class="footer-logo">
   <p>DisasterLink © 2026 — Built for community resilience and support.</p>
 </footer>
 
