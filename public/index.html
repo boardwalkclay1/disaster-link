@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeLink — Emergency Safety Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">SafeLink</div>
+
+    <nav class="nav">
+      <select id="menuDropdown" class="dropdown">
+        <option value="">Menu</option>
+        <option value="about">About</option>
+        <option value="features">Features</option>
+        <option value="safety">Safety Modes</option>
+        <option value="phonebook">Phonebook</option>
+        <option value="signup">Create Account</option>
+        <option value="login">Login</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Your Safety. Your Network.</h1>
+    <p>Instant alerts, background recording, movement detection, and a nationwide directory of people ready to help.</p>
+
+    <div class="button-row">
+      <button class="bubble-btn" onclick="goSignup()">Create Account</button>
+      <button class="bubble-btn" onclick="goLogin()">Login</button>
+      <button class="bubble-btn" onclick="scrollToInfo()">Learn More</button>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="info-section">
+    <h2>What SafeLink Provides</h2>
+
+    <div class="info-card">
+      <h3>Emergency Alerts</h3>
+      <p>Send instant alerts to contacts and nearby users with your location and situation.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Auto Tracking & Recording</h3>
+      <p>Record video/audio in the background, even with the screen dark.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Movement Detection</h3>
+      <p>Detect dangerous movement patterns and auto-send alerts.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Nationwide Phonebook</h3>
+      <p>Find skilled people nearby. Upload your profile for $1.</p>
+    </div>
+  </section>
+
+  <script>
+    function goSignup() {
+      window.location.href = "signup.html";
+    }
+    function goLogin() {
+      window.location.href = "login.html";
+    }
+    function scrollToInfo() {
+      document.getElementById("info").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
