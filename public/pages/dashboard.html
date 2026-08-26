@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeLink Dashboard</title>
+
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <script type="module" src="/js/dashboard.js" defer></script>
+</head>
+
+<body>
+
+<header class="dash-header">
+  <h1>SafeLink Dashboard</h1>
+  <p>Your emergency coordination center.</p>
+</header>
+
+<main class="dash-main">
+
+  <section class="dash-card">
+    <h2>My Status</h2>
+    <button id="markSafe">Mark Myself Safe</button>
+    <button id="markNeeds">Request Help</button>
+    <div id="statusOutput"></div>
+  </section>
+
+  <section class="dash-card">
+    <h2>Supply Locations</h2>
+    <ul id="supplyList"></ul>
+  </section>
+
+  <section class="dash-card">
+    <h2>Community Requests</h2>
+    <ul id="requestList"></ul>
+  </section>
+
+  <section class="dash-card">
+    <h2>Donate</h2>
+    <ul id="donationList"></ul>
+  </section>
+
+  <section class="dash-card">
+    <h2>Leader Updates</h2>
+    <ul id="leaderUpdates"></ul>
+  </section>
+
+</main>
+
+</body>
+</html>
